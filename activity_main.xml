@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/wc"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/name_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:hint="Enter your Name"
+            android:textStyle="bold"
+            android:inputType="textCapWords" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:text="After how long does the competition happen?" />
+
+        <RadioGroup
+            android:id="@+id/group1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/Q1a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="2 years" />
+
+            <RadioButton
+                android:id="@+id/Q1b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Every year" />
+
+            <RadioButton
+                android:id="@+id/Q1c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="4 years" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/answer_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4 Years"
+            android:textColor="#09af00"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:text="How many countries are participating in world cup 2018?" />
+
+        <RadioGroup
+            android:id="@+id/group2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/Q2a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="32" />
+
+            <RadioButton
+                android:id="@+id/Q2b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="All countries" />
+
+            <RadioButton
+                android:id="@+id/Q2c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="64" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/answer_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="32"
+            android:textColor="#09af00"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:text="Which is the host nation for 2018 world cup?" />
+
+        <RadioGroup
+            android:id="@+id/group3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/Q3a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Germany" />
+
+            <RadioButton
+                android:id="@+id/Q3b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Brazil" />
+
+            <RadioButton
+                android:id="@+id/Q3c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Russia" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/answer_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Russia"
+            android:textColor="#09af00"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:text="Who are the current World Cup champions?" />
+
+        <RadioGroup
+            android:id="@+id/group4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/Q4a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Germany" />
+
+            <RadioButton
+                android:id="@+id/Q4b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="France" />
+
+            <RadioButton
+                android:id="@+id/Q4c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Argentina" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/answer_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Germany"
+            android:textColor="#09af00"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:text="Which country has won the most world cup titles?" />
+
+        <RadioGroup
+            android:id="@+id/group5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/Q5a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Senegal" />
+
+            <RadioButton
+                android:id="@+id/Q5b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Brazil" />
+
+            <RadioButton
+                android:id="@+id/Q5c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="England" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/answer_five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brazil"
+            android:textColor="#09af00"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:text="Christiano Ronaldo plays for which country?" />
+
+        <RadioGroup
+            android:id="@+id/group6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/Q6a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Portugal" />
+
+            <RadioButton
+                android:id="@+id/Q6b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Real Madrid" />
+
+            <RadioButton
+                android:id="@+id/Q6c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Poland" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/answer_six"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Portugal"
+            android:textColor="#09af00"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:text="Who is the current top scorer in the world cup 2018?" />
+
+        <RadioGroup
+            android:id="@+id/group7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/Q7a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Lionel Messi" />
+
+            <RadioButton
+                android:id="@+id/Q7b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Harry Kane" />
+
+            <RadioButton
+                android:id="@+id/Q7c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Christiano Ronaldo" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/answer_seven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harry Kane"
+            android:textColor="#09af00"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:text="Which was the first country in Africa to host the World Cup competition?" />
+
+        <RadioGroup
+            android:id="@+id/group8"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/Q8a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="South Africa" />
+
+            <RadioButton
+                android:id="@+id/Q8b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Kenya" />
+
+            <RadioButton
+                android:id="@+id/Q8c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Nigeria" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/answer_eight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="South Africa"
+            android:textColor="#09af00"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:text="Which country will host the next World Cup Competition?" />
+
+        <RadioGroup
+            android:id="@+id/group9"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/Q9a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Qatar" />
+
+            <RadioButton
+                android:id="@+id/Q9b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Mexico" />
+
+            <RadioButton
+                android:id="@+id/Q9c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Argentina" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/answer_nine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qatar"
+            android:textColor="#09af00"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:text="Which team(s) have won the World Cup title so far?" />
+
+        <CheckBox
+            android:id="@+id/argentina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:onClick="onCheckBoxClicked"
+            android:text="Argentina" />
+
+        <CheckBox
+            android:id="@+id/france"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:onClick="onCheckBoxClicked"
+            android:text="France" />
+
+        <CheckBox
+            android:id="@+id/brazil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:onClick="onCheckBoxClicked"
+            android:text="Brazil" />
+
+        <CheckBox
+            android:id="@+id/peru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:onClick="onCheckBoxClicked"
+            android:text="Peru" />
+
+        <TextView
+            android:id="@+id/answer_ten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Argentina, Brazil, France"
+            android:textColor="#09af00"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:text="Which team are you supporting this year?" />
+
+        <EditText
+            android:id="@+id/Team"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold"
+            android:hint="Team Name"
+            android:inputType="textCapWords" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="16dp"
+            android:background="#43A047"
+            android:layout_marginRight="16dp"
+            android:text="score"
+            android:textColor="#FFFFFF"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/answers"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:background="#2979FF"
+                android:onClick="Answers"
+                android:text="Answers"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:background="#2979FF"
+                android:onClick="submitAnswers"
+                android:text="Submit"
+                android:visibility="invisible"/>
+
+            <Button
+                android:id="@+id/retry"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:background="#2979FF"
+                android:onClick="Retry"
+                android:text="RETRY"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+    >
+</ScrollView>
