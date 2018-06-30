@@ -19,3 +19,5 @@ The app contains at least one if/else statement
     All variables, methods, and resource IDs are descriptively named such that another developer reading the code can easily understand their function.
     The code is properly formatted i.e. there are no unnecessary blank lines; there are no unused variables or methods; there is no commented out code.
     The code also has proper indentation when defining variables and methods.
+    
+    Here is the link to the apk file https://drive.google.com/file/d/1K6tvNOzXm6wVG1EqnlJJRuOk4S16orGI/view?usp=sharing
